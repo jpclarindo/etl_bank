@@ -1,0 +1,23 @@
+{
+  "simple_attrs": {
+    "primeiro_nome": "clean_text",
+    "ultimo_nome": "clean_text",
+    "nome_completo": "clean_text",
+    "nome_agencia": "clean_text",
+    "tipo_agencia": "clean_text",
+    "tipo_cliente": "clean_text",
+    "tipo_conta": "clean_text",
+    "status_proposta": "clean_text",
+    "nome_transacao": "clean_text",
+    "cidade": "clean_text",
+    "uf": "clean_text",
+    "estado": "clean_text",
+    "bairro": "clean_text",
+    "logradouro": "clean_text",
+    "email": "normalize_email",
+    "cep": "normalize_cep"
+  },
+  "multiple_attrs": {
+    "endereco": "get_address_dict"
+  }
+}

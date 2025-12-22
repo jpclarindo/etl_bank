@@ -2,6 +2,7 @@ import re
 import os
 import zipfile
 import gdown
+import datetime 
 
 def download_data():
   gdrive_link_file = open('gdrive_link.txt', 'r', encoding='utf-8')
@@ -16,10 +17,18 @@ def download_data():
   os.remove('data.zip')
 
 
-# @title
+def get_age(birth_date):
+  return datetime.now().year - birth_date.year - ((datetime.now().month, datetime.now().day) < (birth_date.month, birth_date.day))
+
 # Clean extra spaces
 def clean_text(text):
   return ' '.join(text.split()).strip()
+
+# Normalize email
+def normalize_email(email):
+  if re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email):
+      return email.strip()
+  return 'unknown@email.com'
 
 # Normalize cep in NNNNNNNN format
 def normalize_cep(cep):
@@ -36,7 +45,7 @@ def normalize_cep(cep):
 
 # Split address to many fields
 def get_address_dict(address):
-  address_dict: {
+  address_dict = {
       'endereco': None,
       'numero': None,
       'bairro': None,

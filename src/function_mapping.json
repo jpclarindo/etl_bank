@@ -19,5 +19,6 @@
   },
   "multiple_attrs": {
     "endereco": "get_address_dict"
+	"data_nascimento": "get_age_dict"
   }
 }

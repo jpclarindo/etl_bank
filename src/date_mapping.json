@@ -1,0 +1,8 @@
+{
+  "Agencias": ["data_abertura"],
+  "Clientes": ["data_inclusao", "data_nascimento"],
+  "Colaboradores": ["data_nascimento"],
+  "Contas": ["data_abertura", "data_ultimo_lancamento"],
+  "Propostas": ["data_entrada_proposta"],
+  "Transacoes": ["data_transacao"]
+}

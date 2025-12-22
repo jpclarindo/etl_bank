@@ -17,8 +17,10 @@ def download_data():
   os.remove('data.zip')
 
 
-def get_age(birth_date):
-  return datetime.now().year - birth_date.year - ((datetime.now().month, datetime.now().day) < (birth_date.month, birth_date.day))
+def get_age_dict(birth_date):  
+  return {'data_nascimento': birth_date,
+          'idade': datetime.now().year - birth_date.year - ((datetime.now().month, datetime.now().day) < (birth_date.month, birth_date.day))
+          }
 
 # Clean extra spaces
 def clean_text(text):

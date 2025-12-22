@@ -48,7 +48,7 @@ def normalize_cep(cep):
 # Split address to many fields
 def get_address_dict(address):
   address_dict = {
-      'endereco': None,
+      'logradouro': None,
       'numero': None,
       'bairro': None,
       'cep': None,
@@ -62,7 +62,7 @@ def get_address_dict(address):
   address_match = re.search(r"(.+?), (\d+) (.+) (\d{5}-?\d{3}) (.+) / ([A-Z]{2})", address)
 
   if address_match:
-    address_dict['endereco'] = clean_text(address_match.group(1))
+    address_dict['logradouro'] = clean_text(address_match.group(1))
     address_dict['numero'] = clean_text(address_match.group(2))
     address_dict['bairro'] = clean_text(address_match.group(3))
     address_dict['cep'] = normalize_cep(address_match.group(4))

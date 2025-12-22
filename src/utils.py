@@ -2,7 +2,7 @@ import re
 import os
 import zipfile
 import gdown
-import datetime 
+from datetime import datetime 
 
 def download_data():
   gdrive_link_file = open('gdrive_link.txt', 'r', encoding='utf-8')

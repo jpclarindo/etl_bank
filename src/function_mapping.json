@@ -18,7 +18,7 @@
     "cep": "normalize_cep"
   },
   "multiple_attrs": {
-    "endereco": "get_address_dict"
+    "endereco": "get_address_dict",
 	"data_nascimento": "get_age_dict"
   }
 }

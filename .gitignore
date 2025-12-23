@@ -3,3 +3,4 @@ gdrive_link.txt
 database.duckdb
 *.pyc
 /data
+*.wal

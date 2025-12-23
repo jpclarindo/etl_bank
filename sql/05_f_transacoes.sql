@@ -6,11 +6,9 @@ SELECT
     (EXTRACT(MINUTE FROM t.data_transacao) * 60) + 
     (EXTRACT(SECOND FROM t.data_transacao)::INTEGER) + 1 AS tempo_id,
     t.nome_transacao AS tipo_transacao,
-    t.cod_transacao,
+    t.cod_transacao as transacao_id,
     t.valor_transacao
 FROM stg_transacoes t;
 
-ALTER TABLE f_transacao ALTER conta_id SET NOT NULL;
-ALTER TABLE f_transacao ALTER data_id SET NOT NULL;
-ALTER TABLE f_transacao ALTER tempo_id SET NOT NULL;
-ALTER TABLE f_transacao ADD PRIMARY KEY (conta_id, data_id, tempo_id);
+ALTER TABLE f_transacao ALTER transacao_id SET NOT NULL;
+ALTER TABLE f_transacao ADD PRIMARY KEY (transacao_id);

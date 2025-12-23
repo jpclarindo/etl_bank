@@ -4,3 +4,4 @@ database.duckdb
 *.pyc
 /data
 *.wal
+evolucao_propostas.json

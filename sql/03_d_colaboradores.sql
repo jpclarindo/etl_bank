@@ -6,7 +6,7 @@ SELECT
     k.idade,
     k.cpf,
     a.cod_agencia AS agencia_id
-FROM k.stg_colaboradores, a.stg_colaborador_agencia
+FROM stg_colaboradores k, stg_colaborador_agencia a
 WHERE k.cod_colaborador = a.cod_colaborador;
 
 ALTER TABLE d_colaborador ALTER colaborador_id SET NOT NULL;

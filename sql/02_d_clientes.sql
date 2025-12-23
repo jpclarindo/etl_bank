@@ -4,5 +4,5 @@ SELECT cod_cliente as cliente_id,
 	cidade as nome_cidade, estado as sigla_estado
 FROM stg_clientes;
 
-ALTER TABLE dim_cliente ALTER cliente_id SET NOT NULL;
-ALTER TABLE dim_cliente ADD PRIMARY KEY (cliente_id);
+ALTER TABLE d_cliente ALTER cliente_id SET NOT NULL;
+ALTER TABLE d_cliente ADD PRIMARY KEY (cliente_id);

@@ -1,6 +1,5 @@
 {
-  "simple_attrs": {
-    "primeiro_nome": "clean_text",
+	"primeiro_nome": "clean_text",
     "ultimo_nome": "clean_text",
     "nome_completo": "clean_text",
     "nome_agencia": "clean_text",
@@ -15,10 +14,8 @@
     "bairro": "clean_text",
     "logradouro": "clean_text",
     "email": "normalize_email",
-    "cep": "normalize_cep"
-  },
-  "multiple_attrs": {
+    "cep": "normalize_cep",
     "endereco": "get_address_dict",
 	"data_nascimento": "get_age_dict"
-  }
+  
 }

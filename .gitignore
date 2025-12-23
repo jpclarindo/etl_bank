@@ -1,1 +1,5 @@
 gdrive_link.txt
+.ipynb_checkpoints/etl-checkpoint.ipynb
+database.duckdb
+*.pyc
+/data

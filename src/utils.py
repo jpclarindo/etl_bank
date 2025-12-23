@@ -51,7 +51,7 @@ def get_address_dict(address):
       'logradouro': None,
       'numero': None,
       'bairro': None,
-      'cep': None,
+      #'cep': None,
       'cidade': 'N/D',
       'estado': 'NI'
   }
@@ -65,7 +65,7 @@ def get_address_dict(address):
     address_dict['logradouro'] = clean_text(address_match.group(1))
     address_dict['numero'] = clean_text(address_match.group(2))
     address_dict['bairro'] = clean_text(address_match.group(3))
-    address_dict['cep'] = normalize_cep(address_match.group(4))
+    #address_dict['cep'] = normalize_cep(address_match.group(4))
     address_dict['cidade'] = clean_text(address_match.group(5))
     address_dict['estado'] = clean_text(address_match.group(6))
 

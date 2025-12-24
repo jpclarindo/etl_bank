@@ -1,0 +1,38 @@
+[
+  {
+    "source_table": "transacoes",
+    "source_column": "num_conta",
+    "target_table": "contas",
+    "target_column": "num_conta"
+  },
+  {
+    "source_table": "contas",
+    "source_column": "cod_cliente",
+    "target_table": "clientes",
+    "target_column": "cod_cliente"
+  },
+  {
+    "source_table": "contas",
+    "source_column": "cod_agencia",
+    "target_table": "agencias",
+    "target_column": "cod_agencia"
+  },
+  {
+    "source_table": "propostas_credito",
+    "source_column": "cod_cliente",
+    "target_table": "clientes",
+    "target_column": "cod_cliente"
+  },
+  {
+    "source_table": "propostas_credito",
+    "source_column": "cod_colaborador",
+    "target_table": "colaboradores",
+    "target_column": "cod_colaborador"
+  },
+  {
+    "source_table": "colaborador_agencia",
+    "source_column": "cod_agencia",
+    "target_table": "agencias",
+    "target_column": "cod_agencia"
+  }
+]
